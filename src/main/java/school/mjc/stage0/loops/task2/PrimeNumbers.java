@@ -6,10 +6,10 @@ public class PrimeNumbers {
 
         while(number<=printToInclusive)
         {
-            int check=number;
+            int check=number-1;
             while(check>0)
             {
-                if(number%check==0)
+                if(number%check!=0)
                 {
                     if(check==1)
                         System.out.println(number);
@@ -18,7 +18,7 @@ public class PrimeNumbers {
                 else
                     break;
 
-            }
+             }
             number++;
         }
     }
