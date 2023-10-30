@@ -11,12 +11,14 @@ public class PrimeNumbers {
             {
                 if(number%check!=0)
                 {
-                    if(check==1)
-                        System.out.println(number);
-                    check--;
+                    break;
                 }
                 else
-                    break;
+                {
+                    if(check==1)
+                      System.out.println(number);
+                    check--;
+                }
 
              }
             number++;

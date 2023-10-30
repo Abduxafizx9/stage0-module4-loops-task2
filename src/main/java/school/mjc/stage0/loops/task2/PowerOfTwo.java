@@ -7,11 +7,14 @@ public class PowerOfTwo {
         if(power>=0)
         {
             int i = 0;
+            int result = 1;
             while(i<=power)
             {
-                System.out.println(2^i);
+                result*=2;
+                System.out.println(result);
                 i++;
             }
+
         }
         else
             System.out.println("too much power");
