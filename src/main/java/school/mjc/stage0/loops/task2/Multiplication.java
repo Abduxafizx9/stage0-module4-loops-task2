@@ -12,10 +12,10 @@ public class Multiplication {
         }
         else
         {
-            while(num>=multiplyByAndToInclusive)
+            while(num<=(-multiplyByAndToInclusive))
             {
                 System.out.println(num*multiplyByAndToInclusive);
-                num--;
+                num++;
             }
 
         }

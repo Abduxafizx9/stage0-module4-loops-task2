@@ -2,7 +2,7 @@ package school.mjc.stage0.loops.task2;
 
 public class PrimeNumbers {
     public void printPrimeNumbers(int printToInclusive) {
-        int number = 0;
+        int number = 1;
 
         while(number<=printToInclusive)
         {
@@ -11,9 +11,13 @@ public class PrimeNumbers {
             {
                 if(number%check==0)
                 {
-                    System.out.println(number);
+                    if(check==1)
+                        System.out.println(number);
+                    check--;
                 }
-                check--;
+                else
+                    break;
+
             }
             number++;
         }

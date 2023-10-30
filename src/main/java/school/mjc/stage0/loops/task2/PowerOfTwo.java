@@ -4,12 +4,12 @@ import java.sql.SQLOutput;
 
 public class PowerOfTwo {
     public void printPower(int power) {
-        if(power>0)
+        if(power>=0)
         {
             int i = 0;
             while(i<=power)
             {
-                System.out.println(i^2);
+                System.out.println(2^i);
                 i++;
             }
         }
