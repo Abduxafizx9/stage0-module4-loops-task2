@@ -8,9 +8,12 @@ public class PowerOfTwo {
         {
             int i = 0;
             int result = 1;
-            while(i<=power)
+            while(i<power)
             {
-                result*=2;
+                if(i==0)
+                    result=1;
+                else
+                    result*=2;
                 System.out.println(result);
                 i++;
             }

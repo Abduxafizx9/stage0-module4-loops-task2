@@ -9,16 +9,18 @@ public class PrimeNumbers {
             int check=number-1;
             while(check>0)
             {
-                if(number%check!=0)
+                if(check>1)
+                {if(number%check==0)
                 {
                     break;
                 }
+                }
                 else
                 {
-                    if(check==1)
                       System.out.println(number);
-                    check--;
+
                 }
+                check--;
 
              }
             number++;
